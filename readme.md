@@ -1,6 +1,6 @@
 # elm-css-light
 
-This experimental project is a fork of [elm-css](https://github.com/rtfeldman/elm-css). `elm-css-light` makes it possible to write raw CSS string simply and directly in your Elm source code like:
+This experimental project is a fork of [elm-css](https://github.com/rtfeldman/elm-css). `elm-css-light` makes it possible to write raw CSS string simply and directly in your Elm source code as follows:
 
 ```elm
 coloredButton : msg -> String -> Html msg
@@ -15,7 +15,16 @@ coloredButton msg label =
         [ text label ]
 ```
 
-This is **scoped** CSS styles of the element. Furthermore, you can also use Media queries, Pseudo Classes and Pseudo Elements in the attribute list. You don't need `class` or `style` attributes any more, but you can still use CSS classes and combine it with external `.css` files if you need.
+This is **scoped** CSS styles of the element. Furthermore, you can also use Media queries, Pseudo Classes and Pseudo Elements in the attribute list:
+
+```elm
+div
+    [ css <| media "(orientation: portrait)" <| style """
+        flex-direction: column; """
+    ] [ ... ]
+```
+
+You don't need `class` or `style` attributes any more, but you can still use CSS classes and combine it with external `.css` files if you need.
 
 ## Usage
 
