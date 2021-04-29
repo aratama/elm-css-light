@@ -26,6 +26,19 @@ div
 
 You don't need `class` or `style` attributes any more, but you can still use CSS classes and combine it with external `.css` files if you need.
 
+##### Pros
+
+- You don't need to concern about `class` name. Class name conflictions will never happen.
+- It doesn't separate CSS style with context. You can find style definitions of the element instantly.
+- `style` attribute can't include media queries, pseudo elements and pseudo class. `elm-css` (and `elm-css-light`) can use them.
+- You can easily copy-and-paste CSS snipetts.
+- You can use most of syntax and features of regular CSS intuitively.
+
+##### Cons
+
+- You can't hightlight these style string (for now). You can't also format these styles with formatter.
+- You can't find corresponding codes via DevTools because the class names are automatically generated in runtime.
+
 ## Usage
 
 First, replace your imports `Html`, `Html.Attributes` and `Html.Events` with of `CssLight.Html`, `CssLight.Html.Attributes` and `CssLight.Html.Events` in your Elm code respectively. These modules are drop-in replacements of hte standard `Html.*` modules and it works as is. Then, you need to import `css_` attribute from `Html.Attributes` like `import Html.Attributes exposing (css_)`. Now, it's totally ready. You can use `css_` attribute takes raw CSS as string for each elements!
