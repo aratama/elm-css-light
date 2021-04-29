@@ -15,10 +15,10 @@ coloredButton msg label =
         [ text label ]
 ```
 
-You can also use Media queries, Pseudo Classes and Pseudo Elements inline. You don't need to `class` or `style` attribute any more.
+You can also use Media queries, Pseudo Classes and Pseudo Elements inline. You don't need `class` or `style` attribute any more.
 
 ## Usage
 
-First, replace imports `Html`, `Html.Attributes` and `Html.Events` with of `CssLight.Html`, `CssLight.Html.Attributes` and `CssLight.Html.Events`. These modules are drop-in replacements of standard `Html.*` modules and it works as is. Then, you need to import `css_` attribute from `Html.Attributes` like `import Html.Attributes exposing (css_)`. it's totally ready. Now, You can use `css_` attribute takes raw CSS as string each elements!
+First, replace your imports `Html`, `Html.Attributes` and `Html.Events` with of `CssLight.Html`, `CssLight.Html.Attributes` and `CssLight.Html.Events` in your Elm code respectively. These modules are drop-in replacements of hte standard `Html.*` modules and it works as is. Then, you need to import `css_` attribute from `Html.Attributes` like `import Html.Attributes exposing (css_)`. Now, it's totally ready. You can use `css_` attribute takes raw CSS as string for each elements!
 
-For Pseudo Elements and Pseudo Class, you can use `css`, `style`, `media`, `pseudoClass` and `pseudoElement`. See the `example` for more information. Just use `elm reactor` to run the example.
+For Pseudo Elements and Pseudo Class, you can combine `css`, `style`, `media`, `pseudoClass` and `pseudoElement`. `css_` is just a shorthand of `css` and these functions. See the `example` for more information. Just use `elm reactor` to run the example.
