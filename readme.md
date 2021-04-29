@@ -23,4 +23,4 @@ First, replace your imports `Html`, `Html.Attributes` and `Html.Events` with of 
 
 For Pseudo Elements and Pseudo Class, you can combine `css`, `style`, `media`, `pseudoClass` and `pseudoElement`. `css_` is just a shorthand of `css` and these functions. See the `example` directory for more information. Just use `elm reactor` to run the example.
 
-Uunfortunately, cs-css-light is not in Elm Packages yet. Just do vendering (copy and past elm-css-light in your project) to use it. I will upload on Elm Packages if it's proven to be useful :)
+Uunfortunately, cs-css-light is not in Elm Packages yet. Just do vendering (copy and past elm-css-light in your project) to use it. For document, run `npx elm make src/Main.elm --docs=docs.json` and use [elm-doc-preview](https://github.com/dmy/elm-doc-preview). I will upload on Elm Packages if it's proven to be useful :)
