@@ -31,7 +31,7 @@ You don't need `class` or `style` attributes any more, but you can still use CSS
 - You can easily copy-and-paste CSS snipetts.
 - You can use all of CSS properties intuitively.
 - It doesn't separate CSS style from your application codes. You can find style definitions of the element instantly when you are coding. (This and the following points are same about `elm-css`)
-- Originally `style` attribute can't include media queries, pseudo elements and pseudo class. You can use them in `css_` attribute of `elm-css-light`.
+- Good old`style` attribute can't include media queries, pseudo elements and pseudo class. However, in `elm-css-light`, you can use them in `css_` attribute inline.
 - You don't need to concern about `class` name. Class name conflictions and unintentional style overrides will never happen.
 
 ##### Cons
