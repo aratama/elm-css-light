@@ -29,7 +29,7 @@ You don't need `class` or `style` attributes any more, but you can still use CSS
 ##### Pros
 
 - You can easily copy-and-paste CSS snipetts.
-- You can use most of syntax and features of regular CSS intuitively.
+- You can use all of CSS properties intuitively.
 - It doesn't separate CSS style from your application codes. You can find style definitions of the element instantly when you are coding. (This and the following points are same about `elm-css`)
 - Originally `style` attribute can't include media queries, pseudo elements and pseudo class. You can use them in `css_` attribute of `elm-css-light`.
 - You don't need to concern about `class` name. Class name conflictions and unintentional style overrides will never happen.
@@ -37,6 +37,7 @@ You don't need `class` or `style` attributes any more, but you can still use CSS
 ##### Cons
 
 - You can't hightlight these style string (for now). You can't also format these styles with formatter.
+- You can't get support from addtional CSS processors like Autoprefixer.
 - You can't find corresponding codes via DevTools easily when you are debugging. It's because the class names are automatically generated in runtime.
 
 ## Usage
